@@ -1,0 +1,12 @@
+.Banner {
+    background: url("./images/accenture_banner.jpg");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+.Banner h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    color: white;
+}
