@@ -26,9 +26,11 @@ export default class Image extends Component {
 
     render() {
         return (
-            <div className="Image">
+            <div className="Image" >
                 <Slide direction= {this.props.image.direction} >
-                    {this.state.imgshown ? <img className="hvr-grow" src={this.props.image.src} onClick={this.handleClick} /> : <div className="text" onClick={this.handleClick}><p>{this.props.image.desc}</p></div>}
+                    {this.state.imgshown ? 
+                    <img className="hvr-grow" src={this.props.image.src} onClick={this.handleClick} alt="" /> : 
+                    <div className="text" onClick={this.handleClick}><p>{this.props.image.desc}</p></div>}
                 </Slide>
                 <h4>{this.props.image.title}</h4>
             </div>

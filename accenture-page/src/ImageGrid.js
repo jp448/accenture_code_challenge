@@ -8,7 +8,7 @@ export default class ImageGrid extends Component {
         return (
             <div className="ImageGrid">
                 {this.props.images.map(p => (
-                    <Image image={p} />
+                    <Image image={p} key={p.image_id} />
                 ))}
             </div>
         )

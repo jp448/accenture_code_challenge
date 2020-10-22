@@ -15,7 +15,7 @@ export default class Banner extends Component {
                         backSpeed={100}
                     />
                 </h1>
-                <Button text={'Discover More'} />
+                <Button text={'Discover More'} href='1' />
             </div>
         )
     }

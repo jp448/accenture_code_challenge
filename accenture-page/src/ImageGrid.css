@@ -3,3 +3,38 @@
     justify-content: space-around;
     align-items: center;
 }
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .ImageGrid {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .ImageGrid {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .ImageGrid {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .ImageGrid {
+    flex-direction: row;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .ImageGrid {
+    flex-direction: row;
+  }
+}

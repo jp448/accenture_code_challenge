@@ -3,6 +3,9 @@
     width: 20rem;
     height: 20rem;
     object-fit: cover;
+    -webkit-box-shadow: 19px 18px 54px -4px rgba(189,189,189,1);
+    -moz-box-shadow: 19px 18px 54px -4px rgba(189,189,189,1);
+    box-shadow: 19px 18px 54px -4px rgba(189,189,189,1);
 }
 
 .Image h4 {

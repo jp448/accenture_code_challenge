@@ -9,27 +9,23 @@ export default class SocialMedia extends Component {
     render() {
         return (
             <div className="SocialMedia">
-                <Title name={this.props.name}  />
+                <Title name={this.props.data.name}  />
                 <div className="social">
                     <div className="twitter">
                         <TwitterTimelineEmbed
                             sourceType="profile"
-                            screenName="AccentureDach"
-                            options={{height: 670}}
+                            screenName={this.props.data.twitter}
+                            options={{height: 660}}
                         />
                     </div>
                     <div className="instagram">
                         <InstagramEmbed
-                        url='https://www.instagram.com/p/CElh__ZgJYJ/'
+                        url={this.props.data.instagram}
                         maxWidth={320}
                         hideCaption={false}
                         containerTagName='div'
                         protocol=''
                         injectScript
-                        onLoading={() => {}}
-                        onSuccess={() => {}}
-                        onAfterRender={() => {}}
-                        onFailure={() => {}}
                         />
                     </div>
                 </div>

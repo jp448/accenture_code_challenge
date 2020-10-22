@@ -1,10 +1,10 @@
 .Footer {
     background-color: white;
     height: 4rem;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 5rem; */
 }
 
 .Footer .social {
@@ -12,19 +12,18 @@
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
-    margin-left: 4rem;
-    color: #BD00FF;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
 }
 
 .Footer a {
-    padding-left: 5rem;
+    padding: 2rem;
+    color: #BD00FF;
 }
 
 .Footer .copyright {
-    margin-top: 1rem;
-    margin-right: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
 }
 
 /* Hover affect from Hover css */

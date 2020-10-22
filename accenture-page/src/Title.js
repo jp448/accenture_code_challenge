@@ -5,7 +5,7 @@ import './Title.css';
 export default class Title extends Component {
     render() {
         return (
-            <div className="Title">
+            <div className="Title" id={this.props.id} >
                 <h2>{this.props.name}</h2>
             </div>
         )

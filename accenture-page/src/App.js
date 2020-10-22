@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import Panel from './Panel';
@@ -22,21 +23,26 @@ class App extends Component {
     panels: [
       {
         name: "What We Do",
+        name_id: 1,
+        panel_id: uuidv4(),
         images: [
           {
             title: "Transform",
+            image_id: uuidv4(),
             src: transform,
             direction: "left",
             desc: "We support business transformation, offering end-to-end solutions - from strategy development and digital transformation to operational implementation."
           },
           {
             title: "Digitalize",
+            image_id: uuidv4(),
             src: robot,
             direction: "down",
             desc: "We believe that new technologies require highly agile corporate structures"
           },
           {
             title: "Optimize",
+            image_id: uuidv4(),
             src: strategy,
             direction: "right",
             desc: "Together with our customers, we find and uncover hidden potential within the company."
@@ -45,21 +51,26 @@ class App extends Component {
       },
       { 
         name: "Who We Are",
+        name_id: 2,
+        panel_id: uuidv4(),
         images: [
           {
-            title: "Collabortors",
+            title: "Collaborators",
+            image_id: uuidv4(),
             src: collaborators,
             direction: "right",
             desc: "We value a collaborative and supportive working environment."
           },
           {
             title: "Innovators",
+            image_id: uuidv4(),
             src: innovators,
             direction: "up",
             desc: "Together with our customers, we find and uncover hidden potential within the company."
           },
           {
             title: "Adapters",
+            image_id: uuidv4(),
             src: adapters,
             direction: "down",
             desc: "Rapid demographic change, individual customer expectations and new technologies require a new understanding of leadership and value creation."
@@ -68,21 +79,26 @@ class App extends Component {
       },
       {
         name: "What We Stand For",
+        name_id: 3,
+        panel_id: uuidv4(),
         images: [
           {
             title: "Diversity",
+            image_id: uuidv4(),
             src: diversity,
             direction: "up",
             desc: "We value diversity and unique contributions."
           },
           {
             title: "Inclusion",
+            image_id: uuidv4(),
             src: inclusion,
             direction: "down",
             desc: "We endeavor to foster a trusting, open and inclusive environment."
           },
           {
             title: "Integrity",
+            image_id: uuidv4(),
             src: integrity,
             direction: "right",
             desc: "We strive to be ethically unyeilding and honest. We take responsibilty for our actions."
@@ -90,9 +106,12 @@ class App extends Component {
         ]
       }
     ],
-    social: [
-      { name: "Connect With Us" } 
-    ]
+    social: 
+      { 
+        name: "Connect With Us",
+        twitter: "AccentureDach",
+        instagram: "https://www.instagram.com/p/CElh__ZgJYJ/"
+       } 
   };
    
   render() {
@@ -101,9 +120,9 @@ class App extends Component {
         <Navbar />
         <Banner />
         {this.props.panels.map(p => (
-          <Panel data={p} />
+          <Panel data={p} key={p.panel_id} />
         ))}
-        <SocialMedia name={this.props.social.name} />
+        <SocialMedia data={this.props.social} />
         <Footer />
     </div>
     );

@@ -8,7 +8,7 @@ export default class Panel extends Component {
     render() {
         return (
             <div className="Panel">
-                <Title name={this.props.data.name} />
+                <Title name={this.props.data.name} id={this.props.data.name_id}/>
                 <ImageGrid images={this.props.data.images} />
             </div>
         )

@@ -7,8 +7,10 @@ export default class Navbar extends Component {
         return (
             <div className= "Navbar">
                 <div className="logo">
-                    <i class="fas fa-greater-than"></i>
-                    <a>Accenture</a>
+                    <i className="fas fa-greater-than"></i>
+                    <a href="https://www.accenture.com/de-de" target="_blank" rel="noopener noreferrer">
+                        Accenture
+                    </a>
                 </div>
             </div>
         )
