@@ -12,6 +12,11 @@ export default class Navbar extends Component {
                         Accenture
                     </a>
                 </div>
+                {/* <div className="translation">
+                    <p className="item">DE</p>
+                    <p className="item">|</p>
+                    <p className="item">EN</p>
+                </div> */}
             </div>
         )
     }
