@@ -10,3 +10,50 @@
     font-size: 5rem;
     color: white;
 }
+
+/* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+    .Banner h1 {
+        font-size: 4rem;
+    }
+    .Banner h1 span {
+        display: block;
+    }
+    .Banner h1 span span {
+        display: inline;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .Banner h1 {
+        font-size: 4rem;
+    }
+    .Banner h1 span {
+        display: block;
+    }
+    .Banner h1 span span {
+        display: inline;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .Banner h1 {
+        font-size: 5rem;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .Banner h1 {
+        font-size: 5rem;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .Banner h1 {
+        font-size: 5rem;
+    }
+  }
