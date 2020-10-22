@@ -8,14 +8,14 @@ export default class Banner extends Component {
     render() {
         return (
             <div className="Banner">
-                <h1>{this.props.data.header}
+                <h1>Let There Be&nbsp;
                     <Typed 
-                        strings={this.props.data.strings} 
+                        strings={['Change', 'Discovery', 'Innovation', 'Change']} 
                         typeSpeed={200} 
                         backSpeed={100}
                     />
                 </h1>
-                <Button text={this.props.data.button_text} href={this.props.data.link} />
+                <Button text={'Discover More'} href='1' />
             </div>
         )
     }

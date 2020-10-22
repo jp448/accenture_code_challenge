@@ -2,7 +2,6 @@
     background-color: white;
     height: 4rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -22,16 +21,4 @@
     font-weight: 900;
     font-size: 1.5rem;
     margin-left: 1rem;
-}
-
-.Navbar .translation {
-    font-size: 1.3rem;
-    padding-right: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Navbar .translation .item {
-    padding: 0.2rem;
 }
