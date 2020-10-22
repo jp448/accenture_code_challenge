@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM socialengine/nginx-spa:latest", 
+    "COPY ./accenture-page/build_folder /app", 
+    "RUN chmod -R 777 /app"
+  ]
+}
