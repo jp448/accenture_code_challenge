@@ -1,28 +1,30 @@
-.Image img {
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover;
-}
-
-.Image h4 {
-    font-size: 2rem;
-    margin-top: 1rem;
-}
-
-.Image .text {
-    border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+.Footer {
+    background-color: white;
+    height: 4rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid blueviolet;
-    cursor: pointer;
+    margin-top: 5rem;
 }
 
-.Image div p {
+.Footer .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    color: #BD00FF;
     font-size: 1.5rem;
-    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+.Footer a {
+    padding-left: 5rem;
+}
+
+.Footer .copyright {
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 /* Hover affect from Hover css */

@@ -3,6 +3,7 @@ import Typed from 'react-typed';
 import Button from './Button';
 import './Banner.css'
 
+// Banner Component using the plugin JS Typed 
 export default class Banner extends Component {
     render() {
         return (

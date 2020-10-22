@@ -1,14 +1,18 @@
 .Button {
-    color: white;
     border: 1px solid #BD00FF;
     padding: 1rem 2rem;
     border-radius: 50px;
-    font-weight: normal;
-    font-size: 1rem;
     background-color: transparent;
     transition: opacity 0.3s ease;
 }
 
+.Button a {
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* Hover affect from Hover css */
 /* Radial Out */
 .hvr-radial-out {
     display: inline-block;
@@ -52,4 +56,5 @@
 
   .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
     -webkit-transform: scale(2);
+    transform: scale(2);
   }

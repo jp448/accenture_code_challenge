@@ -1,19 +1,15 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import Image from './Image'
+import ImageGrid from './ImageGrid'
 import './Panel.css'
 
-
+// Panel Component contains the title and Image grid recieves props from the App Component
 export default class Panel extends Component {
     render() {
         return (
             <div className="Panel">
-                <Title />
-                <div className="images">
-                    <Image direction='left' />
-                    <Image direction='down' />
-                    <Image direction='right' />
-                </div>
+                <Title name={this.props.data.name} />
+                <ImageGrid images={this.props.data.images} />
             </div>
         )
     }
