@@ -58,5 +58,5 @@ If I had more time here are the improvements I would make to the app:
 * Make the responsive design work for tablets.
 * Add a button in the navbar to change the language settings.
 * Improve code by refactoring (especially the app component). 
-* Use react hooks instead of react components
-* Add tests
+* Use react hooks instead of react components.
+* Add tests.
