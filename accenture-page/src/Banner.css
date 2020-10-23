@@ -29,9 +29,11 @@
     .Banner h1 {
         font-size: 4rem;
     }
+
     .Banner h1 span {
         display: block;
     }
+
     .Banner h1 span span {
         display: inline;
     }
@@ -42,6 +44,14 @@
     .Banner h1 {
         font-size: 5rem;
     }
+
+    .Banner h1 span {
+        display: inline;
+    }
+
+    .Banner h1 span span {
+        display: inline;
+    }
   }
   
   /* Large devices (desktops, 992px and up) */
@@ -49,11 +59,27 @@
     .Banner h1 {
         font-size: 5rem;
     }
+
+    .Banner h1 span {
+        display: inline;
+    }
+    
+    .Banner h1 span span {
+        display: inline;
+    }
   }
   
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     .Banner h1 {
         font-size: 5rem;
+    }
+
+    .Banner h1 span {
+        display: inline;
+    }
+    
+    .Banner h1 span span {
+        display: inline;
     }
   }
